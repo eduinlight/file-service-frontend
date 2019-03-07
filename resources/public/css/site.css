@@ -2405,25 +2405,24 @@
 }
 @keyframes shadowSpin {
   0% {
-    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+    box-shadow: 10px -10px #3f51b5, -10px 10px #f0ad4e;
   }
   25% {
-    box-shadow: 10px 10px #39CCCC, -10px -10px #FFDC00;
+    box-shadow: 10px 10px #3f51b5, -10px -10px #f0ad4e;
   }
   50% {
-    box-shadow: -10px 10px #39CCCC, 10px -10px #FFDC00;
+    box-shadow: -10px 10px #3f51b5, 10px -10px #f0ad4e;
   }
   75% {
-    box-shadow: -10px -10px #39CCCC, 10px 10px #FFDC00;
+    box-shadow: -10px -10px #3f51b5, 10px 10px #f0ad4e;
   }
   100% {
-    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+    box-shadow: 10px -10px #3f51b5, -10px 10px #f0ad4e;
   }
 }
 #load {
   z-index: 9999;
-  background-color: #FF4136;
-  opacity: 0.75;
+  background-color: #d9534f;
   width: 10px;
   height: 10px;
   position: absolute;
@@ -2432,7 +2431,7 @@
   left: 0;
   right: 0;
   border-radius: 0px;
-  border: 5px solid #FF4136;
+  border: 5px solid #d9534f;
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
   animation: shadowSpin 1s ease-in-out infinite;
 }
