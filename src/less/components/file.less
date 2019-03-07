@@ -1,0 +1,42 @@
+.file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  cursor: pointer;
+
+  i{
+    font-size: @spacing-unit*5;
+  }
+
+  .file-color{
+    color: @color-primary-main;
+    &:hover{
+      color: saturate(@color-primary-main, 100%);
+    }
+  }
+
+  .dir-color{
+    color: @color-warning;
+    &:hover{
+      color: saturate(@color-warning, 50%);
+    }
+  }
+
+  h5 {
+    text-align: center;
+    white-space: pre-line;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &.selected{
+      color: @color-danger;
+    }
+
+    &:hover{
+      color: @color-primary-dark;
+    }
+  }
+}

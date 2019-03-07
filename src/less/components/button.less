@@ -1,0 +1,20 @@
+.button {
+  background-color: transparent;
+  border: unset;
+  height: @header-height;
+  color: @color-white;
+  padding-left: @spacing-unit;
+  padding-right: @spacing-unit;
+
+  &:focus{
+    border: unset;
+  }
+
+  &.disabled {
+    color: @color-primary-light;
+  }
+
+  &:hover {
+    background-color: @color-primary-dark;
+  }
+}

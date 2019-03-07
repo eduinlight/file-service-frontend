@@ -1,0 +1,23 @@
+(ns file-service-frontend.pages.home.pathbar
+  (:require
+   [reagent.core :as r :refer [atom]]
+   [file-service-frontend.api :as api]
+   [file-service-frontend.utils :as utils]
+   [file-service-frontend.pages.home.breadcrumb :refer [breadcrumb]]
+   [file-service-frontend.actions.globals :as aglobals]
+   [file-service-frontend.states.globals :as sglobals]))
+
+(defn btn-up-click []
+  (if (> (count @sglobals/paths) 1)
+    (aglobals/pop-paths)))
+
+(defn pathbar []
+  [:div.d-flex.flex-row.align-items-center.header.dir
+    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
+      :class (if (= 1 (count @sglobals/paths)) "disabled")
+      :on-click #(btn-up-click)
+      :title "Ir a directorio superior"}
+      [:i.fa.fa-arrow-up]]
+    [:div.separator]
+    [breadcrumb]])
+      
