@@ -4,6 +4,7 @@
    [file-service-frontend.states.globals :as sglobals]
    [file-service-frontend.actions.globals :as aglobals]
    [file-service-frontend.api :as api]
+   [file-service-frontend.components.loading :refer [loading]]
    [file-service-frontend.pages.home.toolbar :refer [toolbar]]
    [file-service-frontend.pages.home.pathbar :refer [pathbar]]
    [file-service-frontend.pages.home.files-view :refer [files-view]]
@@ -13,6 +14,7 @@
 (r/create-class {
   :component-will-mount (fn [this]
     ;cargar paths iniciales
+    (aglobals/set-loading true)
     (api/start-paths (fn [paths]
       (aglobals/set-paths (vec (reverse paths))))))
   :reagent-render (fn []
@@ -20,5 +22,6 @@
       [toolbar]
       [pathbar]
       [:div.container.pt-4
-        [files-view]]])
+        [files-view]]
+      [loading @sglobals/loading]])
 }))

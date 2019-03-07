@@ -2,6 +2,10 @@
   (:require
     [file-service-frontend.states.globals :as sglobals]))
 
+;loading
+(defn set-loading [val]
+  (reset! sglobals/loading val))
+
 ;file-selected
 (defn set-file-selected [file]
   (reset! sglobals/file-selected file))

@@ -2,10 +2,12 @@
   (:require
    [ajax.core :as http]
    [file-service-frontend.config :as config]
+   [file-service-frontend.actions.globals :as aglobals]
    ))
 
 (defn error-handler [error]
-  println error)
+  (aglobals/set-loading false)
+  (println error))
 
 (defn list-files [dir success]
   (http/GET (str config/api-url "/files/list")
