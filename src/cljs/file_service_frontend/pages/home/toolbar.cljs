@@ -15,24 +15,21 @@
 
 (defn toolbar []
   [:div.d-flex.flex-row.align-items-center.header.toolbar
-    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
+    [:button.button {
       :class (if (= 1 (count @sglobals/paths)) "disabled")
       :on-click #(btn-up-click)
       :title "Crear nueva carpeta"}
       [:i.fa.fa-folder]]
-    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
-      :class (if (= 1 (count @sglobals/paths)) "disabled")
+    [:button.button {
       :on-click #(btn-new-file-click)
       :title "Crear nuevo archivo"}
       [:i.fa.fa-file]]
     [:div.separator]
-    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
-      :class (if (nil? @sglobals/file-selected) "disabled")
+    [:button.button {:disabled (nil? @sglobals/file-selected)
       :on-click #(btn-up-click)
       :title "Cambiar nombre"}
       [:i.fa.fa-edit]]
-    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
-      :class (if (nil? @sglobals/file-selected) "disabled")
+    [:button.button {:disabled (nil? @sglobals/file-selected) 
       :on-click #(btn-up-click)
       :title "Eliminar"}
       [:i.fa.fa-trash]]
