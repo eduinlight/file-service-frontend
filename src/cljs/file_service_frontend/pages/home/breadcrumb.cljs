@@ -7,7 +7,8 @@
    [file-service-frontend.states.globals :as sglobals]))
 
 (defn dir-click [pos path]
-  (aglobals/cut-paths pos))
+  (if (not @sglobals/loading)
+    (aglobals/cut-paths pos)))
 
 (defn breadcrumb []
   [:ol.breadcrumb.mb-0
@@ -16,7 +17,6 @@
         (do
           [:li {:key i 
                 :class (if (= i (-> @sglobals/paths count dec)) "active")
-                :disabled (= i (-> @sglobals/paths count dec))
                 :on-click #(dir-click i path)}
             (utils/cut-name (if (= name "") path name) 30)])))])
             

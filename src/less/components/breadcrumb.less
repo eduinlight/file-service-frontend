@@ -4,10 +4,6 @@ ol.breadcrumb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  .active{
-    color: @color-grey-400;
-    cursor: unset;
-  }
 
   li {
     height: @header-height;
@@ -19,6 +15,11 @@ ol.breadcrumb {
     cursor: pointer;
     color: @color-grey-100;
     .user-select-none();
+
+    &.active{
+      color: @color-grey-400;
+      cursor: unset;
+    }
 
     &:hover{
       background-color: @color-primary-dark;

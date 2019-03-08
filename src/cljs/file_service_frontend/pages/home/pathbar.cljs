@@ -8,13 +8,12 @@
    [file-service-frontend.states.globals :as sglobals]))
 
 (defn btn-up-click []
-  (if (> (count @sglobals/paths) 1)
+  (if (and (> (count @sglobals/paths) 1) (not @sglobals/loading))
     (aglobals/pop-paths)))
 
 (defn pathbar []
   [:div.d-flex.flex-row.align-items-center.header.dir
-    [:button.button {:disabled (= 1 (count @sglobals/paths)) 
-      :class (if (= 1 (count @sglobals/paths)) "disabled")
+    [:button.button {:disabled (= 1 (count @sglobals/paths))
       :on-click #(btn-up-click)
       :title "Ir a directorio superior"}
       [:i.fa.fa-arrow-up]]

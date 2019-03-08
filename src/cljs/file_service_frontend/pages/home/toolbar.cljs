@@ -10,6 +10,9 @@
   (if (> (count @sglobals/paths) 1)
     (aglobals/pop-paths)))
 
+(defn btn-new-file-click []
+  (aglobals/set-modal-add-file-open true))
+
 (defn toolbar []
   [:div.d-flex.flex-row.align-items-center.header.toolbar
     [:button.button {:disabled (= 1 (count @sglobals/paths)) 
@@ -19,7 +22,7 @@
       [:i.fa.fa-folder]]
     [:button.button {:disabled (= 1 (count @sglobals/paths)) 
       :class (if (= 1 (count @sglobals/paths)) "disabled")
-      :on-click #(btn-up-click)
+      :on-click #(btn-new-file-click)
       :title "Crear nuevo archivo"}
       [:i.fa.fa-file]]
     [:div.separator]

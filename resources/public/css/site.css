@@ -2368,7 +2368,7 @@
 .button:focus {
   border: unset;
 }
-.button.disabled {
+.button:disabled {
   color: #7986cb;
 }
 .button:hover {
@@ -2442,10 +2442,6 @@ ol.breadcrumb {
   flex-direction: row;
   flex-wrap: wrap;
 }
-ol.breadcrumb .active {
-  color: #bdbdbd;
-  cursor: unset;
-}
 ol.breadcrumb li {
   height: 36px;
   display: flex;
@@ -2458,6 +2454,10 @@ ol.breadcrumb li {
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+}
+ol.breadcrumb li.active {
+  color: #bdbdbd;
+  cursor: unset;
 }
 ol.breadcrumb li:hover {
   background-color: #303f9f;
@@ -2543,6 +2543,9 @@ ol.breadcrumb li:before {
 }
 .file h5:hover {
   color: #303f9f;
+}
+.modal {
+  background-color: #1d1d1db0;
 }
 .cursor-pointer {
   cursor: pointer;

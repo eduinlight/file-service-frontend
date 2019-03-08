@@ -6,6 +6,14 @@
 (defn set-loading [val]
   (reset! sglobals/loading val))
 
+;modal-add-file-open
+(defn set-modal-add-file-open [val]
+  (reset! sglobals/modal-add-file-open val))
+
+;modal-add-folder-open
+(defn set-modal-add-folder-open [val]
+  (reset! sglobals/modal-add-folder-open val))
+
 ;file-selected
 (defn set-file-selected [file]
   (reset! sglobals/file-selected file))
