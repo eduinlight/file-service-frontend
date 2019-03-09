@@ -21,6 +21,6 @@
           [:div.modal-footer
             [:button.btn.btn-default {:type "button" :on-click #(btn-add-file-click)}
               "Cerrar"]
-            [:button.btn.btn-primary 
+            [:button.btn.btn-primary
               "Crear"]]]]]))
       
