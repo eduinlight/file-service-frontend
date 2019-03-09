@@ -2,11 +2,11 @@
   (:require
    [ajax.core :as http]
    [file-service-frontend.config :as config]
-   [file-service-frontend.actions.globals :as aglobals]
+  ;  [file-service-frontend.actions.globals :as aglobals]
    ))
 
 (defn error-handler [error]
-  (aglobals/set-loading false)
+  ; (aglobals/set-loading false)
   (println error))
 
 (defn list-files [dir success]

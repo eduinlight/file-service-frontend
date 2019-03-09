@@ -1,10 +1,8 @@
 (ns file-service-frontend.pages.home.breadcrumb
   (:require
-   [reagent.core :as r :refer [atom]]
-   [file-service-frontend.actions.globals :as aglobals]
-   [file-service-frontend.api :as api]
-   [file-service-frontend.utils :as utils]
-   [file-service-frontend.states.globals :as sglobals]))
+    [file-service-frontend.utils :as utils]
+    [file-service-frontend.actions.globals :as aglobals]
+    [file-service-frontend.states.globals :as sglobals]))
 
 (defn dir-click [pos path]
   (if (not @sglobals/loading)

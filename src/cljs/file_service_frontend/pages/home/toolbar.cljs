@@ -1,8 +1,5 @@
 (ns file-service-frontend.pages.home.toolbar
   (:require
-   [reagent.core :as r :refer [atom]]
-   [file-service-frontend.api :as api]
-   [file-service-frontend.utils :as utils]
    [file-service-frontend.actions.globals :as aglobals]
    [file-service-frontend.states.globals :as sglobals]))
 
