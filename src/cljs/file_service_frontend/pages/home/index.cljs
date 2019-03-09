@@ -7,6 +7,7 @@
    [file-service-frontend.components.loading :refer [loading]]
    [file-service-frontend.pages.home.toolbar :refer [toolbar]]
    [file-service-frontend.pages.home.modal-add-file :refer [modal-add-file]]
+   [file-service-frontend.pages.home.modal-file-view :refer [modal-file-view]]
    [file-service-frontend.pages.home.pathbar :refer [pathbar]]
    [file-service-frontend.pages.home.files-view :refer [files-view]]
    [file-service-frontend.templates.all :refer [all-template]]))
@@ -25,5 +26,6 @@
       [:div.container.pt-4
         [files-view]]
       [loading @sglobals/loading]
+      [modal-file-view]
       [modal-add-file]])
 }))

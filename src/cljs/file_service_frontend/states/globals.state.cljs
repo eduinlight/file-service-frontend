@@ -11,17 +11,20 @@
 (def modal-add-file-open (atom false))
 (def modal-add-folder-open (atom false))
 (def modal-change-name-open (atom false))
+(def modal-file-view (atom false))
+
+(defn update-path [path]
+  (reset! file-selected nil)
+  (reset! files [])
+  (reset! loading true)
+  (api/list-files path (fn [f_list]
+    (reset! files f_list)
+    (reset! loading false))))
 
 ;inicializar watchers
 ;watcher en la barra de direccion para que cada vez que cambie se consulte servidor por listado de archivos de ultima carpeta
 (add-watch paths :paths-watcher (fn [_ paths old new]
-  (reset! file-selected nil)
-  (reset! files [])
-  (reset! loading true)
-  (let [{:keys [path]} (last new)]
-    (api/list-files path (fn [f_list]
-      (reset! files f_list)
-      (reset! loading false))))))
+  (update-path (:path (last new)))))
 
 
 ;watcher en la barra de direccion para que cada vez que cambie se consulte servidor por listado de archivos de ultima carpeta

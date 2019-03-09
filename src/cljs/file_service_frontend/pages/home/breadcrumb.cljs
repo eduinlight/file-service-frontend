@@ -5,7 +5,7 @@
     [file-service-frontend.states.globals :as sglobals]))
 
 (defn dir-click [pos path]
-  (if (not @sglobals/loading)
+  (if (and (< pos (-> @sglobals/paths count dec)) (not @sglobals/loading))
     (aglobals/cut-paths pos)))
 
 (defn breadcrumb []

@@ -10,6 +10,10 @@
 (defn set-modal-add-file-open [val]
   (reset! sglobals/modal-add-file-open val))
 
+;modal-file-view
+(defn set-modal-file-view [val]
+  (reset! sglobals/modal-file-view val))
+
 ;modal-add-folder-open
 (defn set-modal-add-folder-open [val]
   (reset! sglobals/modal-add-folder-open val))

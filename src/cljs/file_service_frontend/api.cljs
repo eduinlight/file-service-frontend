@@ -26,3 +26,12 @@
     :request-format :json
     :response-format :json
     :keywords? true}))
+
+(defn get-content [path success]
+  (http/GET (str config/api-url "/files/content")
+   {:params {:path path}
+    :handler success
+    :error-handler error-handler
+    :request-format :json
+    :response-format :json
+    :keywords? true}))

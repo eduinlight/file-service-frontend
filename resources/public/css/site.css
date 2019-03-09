@@ -2547,6 +2547,14 @@ ol.breadcrumb li:before {
 .modal {
   background-color: #1d1d1db0;
 }
+.img-viewer {
+  width: 100%;
+  height: auto;
+}
+.iframe-viewer {
+  width: 100%;
+  border: none;
+}
 .cursor-pointer {
   cursor: pointer;
 }
