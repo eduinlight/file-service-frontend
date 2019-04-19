@@ -1,4 +1,4 @@
-(ns file-service-frontend.util)
+(ns board-frontend.util)
 
 (defn foo-cljc [x]
   "I don't do a whole lot."

@@ -1,6 +1,6 @@
-(ns ^:figwheel-no-load file-service-frontend.dev
+(ns ^:figwheel-no-load board-frontend.dev
   (:require
-    [file-service-frontend.core :as core]
+    [board-frontend.core :as core]
     [devtools.core :as devtools]))
 
 (devtools/install!)

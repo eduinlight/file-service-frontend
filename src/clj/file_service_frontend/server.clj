@@ -1,6 +1,6 @@
-(ns file-service-frontend.server
+(ns board-frontend.server
     (:require
-     [file-service-frontend.handler :refer [app]]
+     [board-frontend.handler :refer [app]]
      [config.core :refer [env]]
      [ring.adapter.jetty :refer [run-jetty]])
     (:gen-class))

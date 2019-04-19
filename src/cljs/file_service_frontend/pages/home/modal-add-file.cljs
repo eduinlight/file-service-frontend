@@ -1,7 +1,7 @@
-(ns file-service-frontend.pages.home.modal-add-file
+(ns board-frontend.pages.home.modal-add-file
   (:require
-   [file-service-frontend.actions.globals :as aglobals]
-   [file-service-frontend.states.globals :as sglobals]))
+   [board-frontend.actions.globals :as aglobals]
+   [board-frontend.states.globals :as sglobals]))
 
 (defn btn-add-file-click []
   (aglobals/set-modal-add-file-open false))

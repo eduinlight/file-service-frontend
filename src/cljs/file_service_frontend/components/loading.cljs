@@ -1,4 +1,4 @@
-(ns file-service-frontend.components.loading
+(ns board-frontend.components.loading
   (:require
    [reagent.core :as r :refer [atom]]))
 

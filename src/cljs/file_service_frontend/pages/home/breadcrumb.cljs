@@ -1,8 +1,8 @@
-(ns file-service-frontend.pages.home.breadcrumb
+(ns board-frontend.pages.home.breadcrumb
   (:require
-    [file-service-frontend.utils :as utils]
-    [file-service-frontend.actions.globals :as aglobals]
-    [file-service-frontend.states.globals :as sglobals]))
+    [board-frontend.utils :as utils]
+    [board-frontend.actions.globals :as aglobals]
+    [board-frontend.states.globals :as sglobals]))
 
 (defn dir-click [pos path]
   (if (and (< pos (-> @sglobals/paths count dec)) (not @sglobals/loading))

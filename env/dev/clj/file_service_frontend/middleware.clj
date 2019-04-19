@@ -1,4 +1,4 @@
-(ns file-service-frontend.middleware
+(ns board-frontend.middleware
   (:require
    [ring.middleware.content-type :refer [wrap-content-type]]
    [ring.middleware.params :refer [wrap-params]]

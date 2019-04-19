@@ -1,5 +1,5 @@
-(ns file-service-frontend.repl
-  (:use file-service-frontend.handler
+(ns board-frontend.repl
+  (:use board-frontend.handler
         figwheel-sidecar.repl-api
         ring.server.standalone
         [ring.middleware file-info file]))

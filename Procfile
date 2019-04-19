@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/file-service-frontend.jar clojure.main -m file-service-frontend.server
+web: java $JVM_OPTS -cp target/board-frontend.jar clojure.main -m board-frontend.server

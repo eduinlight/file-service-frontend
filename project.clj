@@ -1,4 +1,4 @@
-(defproject file-service-frontend "0.1.0-SNAPSHOT"
+(defproject board-frontend "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -13,6 +13,7 @@
                  [hiccup "1.0.5"]
                  [cljs-ajax "0.7.5"]
                  [yogthos/config "1.1.1"]
+                 [funcool/bide "1.6.0"]
                  [org.clojure/clojurescript "1.10.520"
                   :scope "provided"]
                  [metosin/reitit "0.2.13"]
@@ -25,12 +26,12 @@
             [lein-asset-minifier "0.2.7"
              :exclusions [org.clojure/clojure]]]
 
-  :ring {:handler file-service-frontend.handler/app
-         :uberwar-name "file-service-frontend.war"}
+  :ring {:handler board-frontend.handler/app
+         :uberwar-name "board-frontend.war"}
 
   :min-lein-version "2.5.0"
-  :uberjar-name "file-service-frontend.jar"
-  :main file-service-frontend.server
+  :uberjar-name "board-frontend.jar"
+  :main board-frontend.server
   :clean-targets ^{:protect false}
   [:target-path
    [:cljsbuild :builds :app :compiler :output-dir]
@@ -55,9 +56,9 @@
               :pretty-print  false}}
             :app
             {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
-             :figwheel {:on-jsload "file-service-frontend.core/mount-root"}
+             :figwheel {:on-jsload "board-frontend.core/mount-root"}
              :compiler
-             {:main "file-service-frontend.dev"
+             {:main "board-frontend.dev"
               :asset-path "/js/out"
               :output-to "target/cljsbuild/public/js/app.js"
               :output-dir "target/cljsbuild/public/js/out"
@@ -77,14 +78,14 @@
    :nrepl-middleware [cider.piggieback/wrap-cljs-repl
                       ]
    :css-dirs ["resources/public/css"]
-   :ring-handler file-service-frontend.handler/app}
+   :ring-handler board-frontend.handler/app}
    :watch-dirs ["src/cljs"]
 
   :less {:source-paths ["src/less"]
          :target-path "resources/public/css"}
 
 
-  :profiles {:dev {:repl-options {:init-ns file-service-frontend.repl}
+  :profiles {:dev {:repl-options {:init-ns board-frontend.repl}
                    :dependencies [[cider/piggieback "0.4.0"]
                                   [binaryage/devtools "0.9.10"]
                                   [ring/ring-mock "0.3.2"]

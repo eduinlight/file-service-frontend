@@ -1,6 +1,6 @@
 # Aplicación Frontend
 
-This is the file-service-frontend project.
+This is the board-frontend project.
 
 ## Development mode
 

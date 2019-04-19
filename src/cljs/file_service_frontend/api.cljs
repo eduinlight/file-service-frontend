@@ -1,8 +1,8 @@
-(ns file-service-frontend.api
+(ns board-frontend.api
   (:require
    [ajax.core :as http]
-   [file-service-frontend.config :as config]
-  ;  [file-service-frontend.actions.globals :as aglobals]
+   [board-frontend.config :as config]
+  ;  [board-frontend.actions.globals :as aglobals]
    ))
 
 (defn error-handler [error]

@@ -1,4 +1,4 @@
-(ns file-service-frontend.utils
+(ns board-frontend.utils
   (:require [clojure.string :as str]))
 
 (defn cut-name [name cant]

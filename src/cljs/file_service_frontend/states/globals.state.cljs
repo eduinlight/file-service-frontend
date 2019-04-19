@@ -1,7 +1,7 @@
-(ns file-service-frontend.states.globals
+(ns board-frontend.states.globals
   (:require
-   [file-service-frontend.api :as api]
-   [file-service-frontend.utils :as utils]
+   [board-frontend.api :as api]
+   [board-frontend.utils :as utils]
    [reagent.core :as reagent :refer [atom]]))
 
 (def paths (atom []))

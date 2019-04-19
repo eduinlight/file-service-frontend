@@ -1,4 +1,4 @@
-(ns file-service-frontend.templates.all
+(ns board-frontend.templates.all
   (:require [reagent.core :as r :refer [atom]]))
 
 ;TEST DE TEMPLATE (SOLO PARA COMPROBAR FUNCIONAMIENTO DE children y fragment)

@@ -1,7 +1,7 @@
-(ns file-service-frontend.pages.home.toolbar
+(ns board-frontend.pages.home.toolbar
   (:require
-   [file-service-frontend.actions.globals :as aglobals]
-   [file-service-frontend.states.globals :as sglobals]))
+   [board-frontend.actions.globals :as aglobals]
+   [board-frontend.states.globals :as sglobals]))
 
 (defn btn-up-click []
   (if (> (count @sglobals/paths) 1)
