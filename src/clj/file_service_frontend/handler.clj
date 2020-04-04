@@ -1,24 +1,13 @@
-<<<<<<< HEAD
 (ns file-service-frontend.handler
   (:require
    [reitit.ring :as reitit-ring]
    [file-service-frontend.middleware :refer [middleware]]
-=======
-(ns board-frontend.handler
-  (:require
-   [reitit.ring :as reitit-ring]
-   [board-frontend.middleware :refer [middleware]]
->>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
    [hiccup.page :refer [include-js include-css html5]]
    [config.core :refer [env]]))
 
 (def mount-target
   [:div#app
-<<<<<<< HEAD
    [:h2 "Welcome to file-service-frontend"]
-=======
-   [:h2 "Welcome to board-frontend"]
->>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
    [:p "please wait while Figwheel is waking up ..."]
    [:p "(Check the js console for hints if nothing exсiting happens.)"]])
 
