@@ -1,95 +1,28 @@
-# Aplicación Frontend
+# File Server Frontend
 
-This is the board-frontend project.
+This is the File server frontend of the [file server api]('https://github.com/eduinlight/file-service-api').
 
-## Development mode
+## Instructions
 
-To start the Figwheel compiler, navigate to the project folder and run the following command in the terminal:
+1. Install [leiningen]('https://leiningen.org/')
+2. Install dependencies
 
-```
-lein figwheel
-```
-
-Figwheel will automatically push cljs changes to the browser. The server will be available at [http://localhost:3449](http://localhost:3449) once Figwheel starts up. 
-
-Figwheel also starts `nREPL` using the value of the `:nrepl-port` in the `:figwheel`
-config found in `project.clj`. By default the port is set to `7002`.
-
-The figwheel server can have unexpected behaviors in some situations such as when using
-websockets. In this case it's recommended to run a standalone instance of a web server as follows:
-
-```
-lein do clean, run
+```BASH
+$ git clone https://github.com/eduinlight/file-service-api
+$ cd file-service-api
+$ lein deps
 ```
 
-The application will now be available at [http://localhost:3000](http://localhost:3000).
+3. Run the server on development enviroment
 
-### Style compilation
-To compile [less](https://github.com/Deraen/less4clj) sources and then watch for changes and recompile until interrupted, run
-```
-lein less4j auto
+```BASH
+$ lein figwheel
 ```
 
-### Optional development tools
+## Swagger documentation
 
-Start the browser REPL:
+Enter to http://localhost:3449 and you can see something like this image.
 
-```
-$ lein repl
-```
-The Jetty server can be started by running:
-
-```clojure
-(start-server)
-```
-and stopped by running:
-```clojure
-(stop-server)
-```
-
-
-## Building for release
-
-```
-lein do clean, uberjar
-```
-
-## Deploying to Heroku
-
-Make sure you have [Git](http://git-scm.com/downloads) and [Heroku toolbelt](https://toolbelt.heroku.com/) installed, then simply follow the steps below.
-
-Optionally, test that your application runs locally with foreman by running.
-
-```
-foreman start
-```
-
-Now, you can initialize your git repo and commit your application.
-
-```
-git init
-git add .
-git commit -m "init"
-```
-create your app on Heroku
-
-```
-heroku create
-```
-
-optionally, create a database for the application
-
-```
-heroku addons:add heroku-postgresql
-```
-
-The connection settings can be found at your [Heroku dashboard](https://dashboard.heroku.com/apps/) under the add-ons for the app.
-
-deploy the application
-
-```
-git push heroku master
-```
-
-Your application should now be deployed to Heroku!
-For further instructions see the [official documentation](https://devcenter.heroku.com/articles/clojure).
+![](https://github.com/eduinlight/file-service-api/blob/master/images/explorer.png "explorer")
+![](https://github.com/eduinlight/file-service-api/blob/master/images/view_image.png "view_image")
+![](https://github.com/eduinlight/file-service-api/blob/master/images/view_video.png "view_video")
