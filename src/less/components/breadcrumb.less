@@ -1,0 +1,33 @@
+ol.breadcrumb {
+  background-color: transparent;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    height: @header-height;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 @spacing-unit*0.8;
+    text-align: center;
+    cursor: pointer;
+    color: @color-grey-100;
+    .user-select-none();
+
+    &.active{
+      color: @color-grey-400;
+      cursor: unset;
+    }
+
+    &:hover{
+      background-color: @color-primary-dark;
+    }
+
+    &:before{
+      content: '';
+      padding: 0;
+    }
+  }
+}

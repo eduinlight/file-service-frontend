@@ -1,0 +1,42 @@
+.header {
+  .full-width();
+  background-color: @color-primary-main;
+  height: auto;
+  padding-left: @spacing-unit*3;
+  padding-right: @spacing-unit*3;
+  position: fixed;
+  z-index: 1000;
+
+  @media @xs{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo-right{
+    position: absolute;
+    right: @spacing-unit;
+    font-weight: bold;
+    color: @color-white;
+
+    @media @xs{
+      display: none;
+    }
+  }
+
+  &.dir{
+    top: @header-height;
+    border-top: 1px solid @color-primary-dark;
+  }
+  
+  @media @sm {
+    padding-left: @spacing-unit*1;
+    padding-right: @spacing-unit*1;
+  }
+
+  div.separator {
+    width: 1px;
+    height: @header-height * 0.5;
+    border-right: 1px solid @color-grey-500;
+    margin: 0 @spacing-unit;
+  }
+}
