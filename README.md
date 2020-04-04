@@ -21,7 +21,7 @@ $ lein figwheel
 
 ## Swagger documentation
 
-Enter to http://localhost:3449 and you can see something like this image.
+Enter to http://localhost:3449 and you will see something like this image. **NOTE:** use some CORS pluging for the navigator that you use.
 
 ![](https://github.com/eduinlight/file-service-frontend/blob/master/images/explorer.png "explorer")
 ![](https://github.com/eduinlight/file-service-frontend/blob/master/images/view_image.png "view_image")
