@@ -1,6 +1,6 @@
 # File Server Frontend
 
-This is the File server frontend of the [file server api]('https://github.com/eduinlight/file-service-api').
+This is the File server frontend of the [file server api]('https://github.com/eduinlight/file-service-backend').
 
 ## Instructions
 
@@ -8,8 +8,8 @@ This is the File server frontend of the [file server api]('https://github.com/ed
 2. Install dependencies
 
 ```BASH
-$ git clone https://github.com/eduinlight/file-service-api
-$ cd file-service-api
+$ git clone https://github.com/eduinlight/file-service-frontend
+$ cd file-service-frontend
 $ lein deps
 ```
 
@@ -26,3 +26,7 @@ Enter to http://localhost:3449 and you can see something like this image.
 ![](https://github.com/eduinlight/file-service-frontend/blob/master/images/explorer.png "explorer")
 ![](https://github.com/eduinlight/file-service-frontend/blob/master/images/view_image.png "view_image")
 ![](https://github.com/eduinlight/file-service-frontend/blob/master/images/view_video.png "view_video")
+
+---
+
+![LICENCE](https://github.com/eduinlight/file-service-frontend/blob/master/LICENSE)
