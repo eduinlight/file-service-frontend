@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 (ns file-service-frontend.actions.globals
   (:require
     [file-service-frontend.states.globals :as sglobals]))
+=======
+(ns board-frontend.actions.globals
+  (:require
+    [board-frontend.states.globals :as sglobals]))
+>>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
 
 ;loading
 (defn set-loading [val]

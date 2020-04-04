@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (ns file-service-frontend.pages.home
   (:require
    [reagent.core :as r :refer [atom]]
@@ -11,6 +12,21 @@
    [file-service-frontend.pages.home.pathbar :refer [pathbar]]
    [file-service-frontend.pages.home.files-view :refer [files-view]]
    [file-service-frontend.templates.all :refer [all-template]]))
+=======
+(ns board-frontend.pages.home
+  (:require
+   [reagent.core :as r :refer [atom]]
+   [board-frontend.states.globals :as sglobals]
+   [board-frontend.actions.globals :as aglobals]
+   [board-frontend.api :as api]
+   [board-frontend.components.loading :refer [loading]]
+   [board-frontend.pages.home.toolbar :refer [toolbar]]
+   [board-frontend.pages.home.modal-add-file :refer [modal-add-file]]
+   [board-frontend.pages.home.modal-file-view :refer [modal-file-view]]
+   [board-frontend.pages.home.pathbar :refer [pathbar]]
+   [board-frontend.pages.home.files-view :refer [files-view]]
+   [board-frontend.templates.all :refer [all-template]]))
+>>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
 
 (defn home-page [{:keys []}]
 (r/create-class {
