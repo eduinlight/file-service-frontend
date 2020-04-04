@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 (ns file-service-frontend.pages.home.toolbar
   (:require
    [file-service-frontend.actions.globals :as aglobals]
    [file-service-frontend.states.globals :as sglobals]))
-=======
-(ns board-frontend.pages.home.toolbar
-  (:require
-   [board-frontend.actions.globals :as aglobals]
-   [board-frontend.states.globals :as sglobals]))
->>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
 
 (defn btn-up-click []
   (if (> (count @sglobals/paths) 1)

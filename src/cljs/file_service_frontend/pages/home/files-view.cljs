@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 (ns file-service-frontend.pages.home.files-view
   (:require
    [file-service-frontend.utils :as utils]
    [file-service-frontend.actions.globals :as aglobals]
    [file-service-frontend.states.globals :as sglobals]))
-=======
-(ns board-frontend.pages.home.files-view
-  (:require
-   [board-frontend.utils :as utils]
-   [board-frontend.actions.globals :as aglobals]
-   [board-frontend.states.globals :as sglobals]))
->>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
 
 (defn select-file [f]
   (if (or (nil? @sglobals/file-selected) (not (= (:path @sglobals/file-selected) (:path f))))

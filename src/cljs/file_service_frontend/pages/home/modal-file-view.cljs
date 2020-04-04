@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (ns file-service-frontend.pages.home.modal-file-view
   (:require
    [file-service-frontend.utils :as utils]
@@ -6,15 +5,6 @@
    [file-service-frontend.api :as api]
    [file-service-frontend.actions.globals :as aglobals]
    [file-service-frontend.states.globals :as sglobals]))
-=======
-(ns board-frontend.pages.home.modal-file-view
-  (:require
-   [board-frontend.utils :as utils]
-   [board-frontend.config :as config]
-   [board-frontend.api :as api]
-   [board-frontend.actions.globals :as aglobals]
-   [board-frontend.states.globals :as sglobals]))
->>>>>>> 16da94029af601b261a8d7327a4192831e1db31c
 
 (defn btn-close-click []
   (aglobals/set-modal-file-view false))
