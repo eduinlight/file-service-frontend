@@ -4,7 +4,7 @@ This is the File server frontend of the [file server api]('https://github.com/ed
 
 ## Instructions
 
-1. Install [leiningen]('https://leiningen.org/')
+1. Install [leiningen](https://leiningen.org/)
 2. Install dependencies
 
 ```BASH
