@@ -23,6 +23,6 @@ $ lein figwheel
 
 Enter to http://localhost:3449 and you can see something like this image.
 
-![](https://github.com/eduinlight/file-service-api/blob/master/images/explorer.png "explorer")
-![](https://github.com/eduinlight/file-service-api/blob/master/images/view_image.png "view_image")
-![](https://github.com/eduinlight/file-service-api/blob/master/images/view_video.png "view_video")
+![](https://github.com/eduinlight/file-service-frontend/blob/master/images/explorer.png "explorer")
+![](https://github.com/eduinlight/file-service-frontend/blob/master/images/view_image.png "view_image")
+![](https://github.com/eduinlight/file-service-frontend/blob/master/images/view_video.png "view_video")
